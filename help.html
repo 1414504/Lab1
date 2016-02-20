@@ -6,10 +6,10 @@
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <style type="text/css">
         nav a{
-            text-decoration:none;
+            text-decoration: none;
             font-size: 18px;
             border: solid;
-            color: #000000;
+            border-color: black;
         }
 
         .centre-align{
@@ -31,18 +31,20 @@
             padding-top: 75px;
         }
 
-        .footer{
-            border-top:solid 2px;
+        .footer {
+            border-top: solid 2px;
             text-align: center;
             margin-top: 15px;
         }
 
+        .display_inline {
+            display: inline;
+
+        }
+
     </style>
 </head>
-
-
 <body>
-
 <div class="container">
     <header>
         <div class="row">
@@ -67,25 +69,69 @@
         </div>
     </header>
     <main>
+        <h2>Help with Cheese</h2>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
+                Name:
+
+            </div>
+                <div class="col-md-3">
+                           <input type="text" name="Name" value="">
+
+                </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                email:
+
+            </div>
+            <div class="col-md-3">
+                <input type="text" name="Email" value="">
 
             </div>
 
         </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                Your Favourite Cheese:
+
+            </div>
+            <div class="col-md-3">
+                <input type="radio" name="fav_cheese" value="Feta" class = "display_inline"> Feta<br>
+                <input type="radio" name="fav_cheese" value="Gouda" class = "display_inline"> Gouda<br>
+                <input type="radio" name="fav_cheese" value="Other" class = "display_inline"> Other
+
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                What is your cheese problem:
+
+            </div>
+            <div class="col-md-3">
+                <textarea></textarea>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <input type="submit" value="Submit">
+
+            </div>
+
+
+        </div>
+
+
     </main>
-
-    <h1>My Favourite Cheese</h1>
-    <p>My favourite cheese in order are:</p> </br>
-
-    <ul style="list-style-type:circle">
-        <li>Cheddar</li>
-        <li>Brie</li>
-        <li>Gouda</li>
-        <li>Philadelphia</li>
-        <li>Cheese in a can</li>
-        <li>The really cheap cheese slices from Tesco</li>
-    </ul>
 
 
 
